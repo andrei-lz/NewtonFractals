@@ -1,4 +1,4 @@
-# Newton Fractals (C++20, OpenMP, Research-Grade)
+# Newton Fractals (C++20, OpenMP)
 
 A compact but rigorous **Newton fractal** renderer intended as a showcase for
 HPC-aware scientific software engineering (Cambridge MPhil level).
@@ -9,7 +9,7 @@ HPC-aware scientific software engineering (Cambridge MPhil level).
 - **Reproducibility**: CI (Ubuntu), scripts to reproduce figures/benchmarks, release-friendly layout.
 - **Optional viewer**: minimal ImGui+GLFW interactive viewer to explore basins & iteration heatmaps.
 
-![Fractal Generation Viewer]({7A0CDA9B-75A1-417A-A3D8-9CDCF5265409}.png)
+<img width="801" height="1036" alt="7A0CDA9B-75A1-417A-A3D8-9CDCF5265409" src="https://github.com/user-attachments/assets/2f5c20b9-29cc-4dbf-ac19-90fab4daadf8" />
 
 ## Quick Start
 
