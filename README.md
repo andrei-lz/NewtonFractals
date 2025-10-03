@@ -1,4 +1,4 @@
-# Newton Fractals (C++20, OpenMP, Research-Grade)
+# Newton Fractals (C++20, OpenMP)
 
 A compact but rigorous **Newton fractal** renderer intended as a showcase for
 HPC-aware scientific software engineering (Cambridge MPhil level).
