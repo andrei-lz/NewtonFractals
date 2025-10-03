@@ -57,7 +57,7 @@ static void compute_images(State &S, ImageRGBA &basin, ImageRGBA &iters) {
   const double dy = (S.ymax - S.ymin) / double(S.H);
 
   auto colors =
-      make_basin_palette((int)roots.size(), BasinPalette::AngleHue, &roots);
+      make_basin_palette((int)roots.size(), BasinPalette::BlueGold, &roots);
   RGBA no_conv{0, 0, 0, 255};
   int max_k = 1;
 #pragma omp parallel for schedule(static) reduction(max : max_k)
@@ -117,7 +117,9 @@ int main() {
     ImGui::InputDouble("tol", &S.tol);
     ImGui::InputDouble("damping", &S.damping);
     static int poly_idx = 0;
-    const char *polys[] = {"z3-1", "z5-1", "z3-2z+2"};
+    const char *polys[] = {"z3-1", "z5-1", "z3-2z+2",
+                           "tight-clusters-archipelagos",
+                           "mixed-radii-pentagon-stack"};
     if (ImGui::Combo("poly", &poly_idx, polys, IM_ARRAYSIZE(polys))) {
       S.poly_id = polys[poly_idx];
       S.dirty = true;

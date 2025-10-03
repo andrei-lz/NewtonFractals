@@ -100,7 +100,7 @@ int main(int argc, char **argv) {
                dy = (a.ymax - a.ymin) / double(a.H);
 
   auto colors =
-      make_basin_palette((int)roots.size(), BasinPalette::AngleHue, &roots);
+      make_basin_palette((int)roots.size(), BasinPalette::Pastel, &roots);
   RGBA no_conv{0, 0, 0, 255};
 
   NewtonParams np;
